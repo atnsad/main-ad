@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>yn-bnr</title>
+    <title>صفحه نمایش</title>
     <style>
         body {
             margin: 0;
@@ -15,15 +15,19 @@
             font-family: sans-serif;
             box-sizing: border-box;
         }
+
         .main-wrapper {
             padding: 24px;
         }
+
+        /* بخش نگه‌دارنده بنرها در انتهای صفحه بدون استفاده از fixed یا sticky */
         .bottom-sponsors-section {
             width: 100%;
             padding: 20px 0;
             background-color: #f9f9f9;
             border-top: 1px solid #e5e5e5;
         }
+
         .sponsor-grid-layout {
             display: flex;
             justify-content: center;
@@ -33,6 +37,7 @@
             margin: 0 auto;
             flex-wrap: wrap;
         }
+
         .sponsor-slot-item {
             flex: 0 1 auto;
             min-height: 90px;
@@ -41,6 +46,8 @@
             align-items: center;
         }
     </style>
+
+    <!-- اسکریپت اصلی یکتانت (بدون دستکاری کد) -->
     <script>
         !function(e,t,n){
             e.yektanetAnalyticsObject=n,
@@ -63,15 +70,24 @@
     </script>
 </head>
 <body>
+
+    <main class="main-wrapper">
+        <p></p>
+    </main>
+
+    <!-- کانتینر پایین صفحه؛ عاری از واژه‌های حساس AdBlock مثل ads و banner -->
     <footer class="bottom-sponsors-section">
         <div class="sponsor-grid-layout">
             <div class="sponsor-slot-item">
+                <!-- جایگاه بنری اول -->
                 <div class="yn-bnr" id="ynpos-20953"></div>
             </div>
             <div class="sponsor-slot-item">
-                <div class="yn-bnr" id="ynpos-20953-2"></div>
+                <!-- جایگاه بنری دوم (شناسه جایگاه اختصاصی پنل را جایگزین کنید) -->
+                <div class="yn-bnr" id="ynpos-20954"></div>
             </div>
         </div>
     </footer>
+
 </body>
 </html>
